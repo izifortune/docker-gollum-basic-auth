@@ -22,4 +22,4 @@ RUN git init /root/wikidata
 
 # Expose default gollum port 4567
 EXPOSE 4567
-ENTRYPOINT ["/usr/local/bin/gollum", "/root/wikidata"]
+ENTRYPOINT ["/usr/local/bin/gollum", "/root/wikidata", "--config", "auth.rb"]
